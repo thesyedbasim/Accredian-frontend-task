@@ -7,7 +7,7 @@ const HowToReferSection = () => {
       id: 1,
       title: 'Fill Referral Form',
       description:
-        "Enter your details and your friend's information in our simple referral form.",
+        'Enter your details and your friend@rsquo; information in our simple referral form.',
       icon: '/icons/form-icon.svg',
     },
     {
@@ -44,7 +44,7 @@ const HowToReferSection = () => {
           <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-indigo-100 -translate-y-1/2 z-0"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div
                 key={step.id}
                 className="relative z-10 bg-white rounded-xl shadow-lg p-8 transition-transform duration-300 hover:-translate-y-2"
@@ -80,7 +80,8 @@ const HowToReferSection = () => {
 
         <div className="mt-16 text-center">
           <p className="text-indigo-600 font-semibold mb-4">
-            It's that simple! Start referring today and unlock amazing rewards.
+            It@rsquo; that simple! Start referring today and unlock amazing
+            rewards.
           </p>
           <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition duration-300 ease-in-out">
             Start Referring

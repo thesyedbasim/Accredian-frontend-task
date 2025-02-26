@@ -55,14 +55,14 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
       newErrors.referrerPhone = 'Your phone number is required';
 
     if (!formData.refereeName)
-      newErrors.refereeName = "Friend's name is required";
+      newErrors.refereeName = 'Friend@rsquo; name is required';
     if (!formData.refereeEmail) {
-      newErrors.refereeEmail = "Friend's email is required";
+      newErrors.refereeEmail = 'Friend@rsquo; email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.refereeEmail)) {
       newErrors.refereeEmail = 'Email is invalid';
     }
     if (!formData.refereePhone)
-      newErrors.refereePhone = "Friend's phone number is required";
+      newErrors.refereePhone = 'Friend@rsquo; phone number is required';
 
     if (!formData.courseName) newErrors.courseName = 'Please select a course';
 
@@ -187,7 +187,7 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-6 space-y-6">
-                  {/* Referrer's Information */}
+                  {/* Referrer@rsquo; Information */}
                   <div>
                     <h4 className="font-medium text-gray-900 mb-3">
                       Your Information
@@ -273,10 +273,10 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
                     </div>
                   </div>
 
-                  {/* Friend's Information */}
+                  {/* Friend@rsquo; Information */}
                   <div>
                     <h4 className="font-medium text-gray-900 mb-3">
-                      Friend's Information
+                      Friend@rsquo; Information
                     </h4>
                     <div className="grid grid-cols-1 gap-4">
                       <div>
@@ -284,7 +284,7 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
                           htmlFor="refereeName"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Friend's Name *
+                          Friend@rsquo; Name *
                         </label>
                         <input
                           type="text"
@@ -310,7 +310,7 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
                           htmlFor="refereeEmail"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Friend's Email *
+                          Friend@rsquo; Email *
                         </label>
                         <input
                           type="email"
@@ -336,7 +336,7 @@ const ReferralFormModal: React.FC<ReferralFormModalProps> = ({
                           htmlFor="refereePhone"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Friend's Phone Number *
+                          Friend@rsquo; Phone Number *
                         </label>
                         <input
                           type="tel"
